@@ -31,7 +31,7 @@
         public function store(){
             $query = "INSERT INTO {$this->table_name} 
                     (kode, nama, diskon, iuran) 
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?)
                     ";
             $data = $this->conn->prepare($query);
         
@@ -65,6 +65,7 @@
                 $this->nama, 
                 $this->diskon, 
                 $this->iuran, 
+                $this->id,
             ]);
         
             return $data->rowCount() > 0;
