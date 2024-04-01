@@ -28,7 +28,7 @@ $data = $kartu->index();
     <title>Daftar Kartu</title>
 </head>
 <body>
-    <h1>Daftar Produk</h1>
+    <h1>Daftar Kartu</h1>
     <a href="create.php">Tambah</a>
     <table border="1">
         <thead>
